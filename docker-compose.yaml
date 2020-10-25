@@ -1,0 +1,28 @@
+version: '3.2'
+
+services:
+  postgres:
+    container_name: postgres
+    image: postgres
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_PASSWORD=password
+      - POSTGRES_USER=postgres
+      - POSTGRES_DB=amazing
+
+  app:
+    container_name: amazing-app
+    image: amazing-app
+    build: ./
+    ports:
+      - 8081:8081
+    depends_on:
+      - postgres
+    restart: on-failure
+
+
+
+
+
+

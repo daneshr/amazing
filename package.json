@@ -1,0 +1,34 @@
+{
+  "name": "amazing-company",
+  "version": "0.1.0",
+  "description": "amazing company challenge for tradeshift.com",
+  "keywords": [
+    "tradeshift",
+    "react",
+    "amazing"
+  ],
+  "author": "Danesh Razavi",
+  "dependencies": {
+    "axios": "^0.20.0",
+    "classnames": "2.2.6",
+    "css-loader": "^1.0.0",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
+    "react-json-editor-ajrm": "^2.5.13",
+    "react-notifications": "^1.7.2",
+    "react-tradeshift-ui": "^3.1.1",
+    "react-tree-graph": "^5.1.0"
+  },
+  "scripts": {
+    "build": "webpack"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.3",
+    "@babel/preset-env": "^7.12.1",
+    "@babel/preset-react": "^7.12.1",
+    "babel-loader": "^8.1.0",
+    "style-loader": "^0.22.1",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^4.1.0"
+  }
+}

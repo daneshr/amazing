@@ -1,0 +1,31 @@
+body {
+    font: 14px "Century Gothic", Futura, sans-serif;
+    margin: 20px;
+}
+
+ol, ul {
+    padding-left: 30px;
+}
+
+label, button {
+    font-family: inherit;
+}
+.container {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2em;
+    heigth:100%;
+}
+.aside {
+    display: flex;
+    background: #ffffff;
+    align-items: center;
+    margin: 1em;
+}
+.column {
+    display: flex;
+    align-items: center;
+    margin-left:1em;
+}
+

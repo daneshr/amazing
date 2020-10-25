@@ -1,0 +1,35 @@
+spring:
+    application:
+        name: amazing
+    profiles:
+        active: development
+---
+server:
+    port: 8080  
+spring:
+    profiles: development
+    datasource:
+        driverClassName: org.h2.Driver
+        url: jdbc:h2:mem:testdb
+        username: sa
+        password: password
+    jpa:
+        database-platform: org.hibernate.dialect.H2Dialect 
+        show-sql: false
+    h2:
+        console:
+            enabled: true
+---
+server:
+    port: 8081
+spring:
+    profiles: production
+    datasource:
+        driverClassName: org.postgresql.Driver
+        url: jdbc:postgresql://postgres:5432/amazing
+        username: postgres
+        password: password
+    jpa:
+        database-platform: org.hibernate.dialect.PostgreSQL9Dialect
+        show-sql: false
+
